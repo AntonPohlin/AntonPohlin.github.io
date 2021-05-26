@@ -6,14 +6,23 @@
         <link rel="shortcut icon" href="../icons/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="../css/pages.css">
         <title>Other | Anton Pohlin</title>
-
     </head>
-
+    <audio id="audioID">
+        <source src="../audio/its_a_happy_day.mp3"></source>
+    </audio>
     <body>
         <header id = "main-header">
             <div class="container"
                 <h1>Anton Pohlin</h1>
             </div>
+
+            <script>
+                var audio1 = document.getElementById("audioID");
+                function playAudio() {
+                    audio1.play();
+                    console.log("test");
+                }
+            </script>
         </header>
 
         <nav id = "navbar">
@@ -29,8 +38,8 @@
         </nav>
         <section id="showcase">
             <div class="container">
-                <h1>
-                    Instant happiness
+                <h1 onclick="playAudio()">
+                    Increase your happiness
                 </h1>
             </div>
         </section>
@@ -38,11 +47,17 @@
             <section id="main">
                 <h1>Welcome</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis tempus massa, sit amet finibus nisi. Curabitur cursus metus quis arcu cursus, sed vulputate turpis varius. Cras egestas, nisi ut sollicitudin sodales, lacus nisl porta mauris, ut iaculis ipsum erat eu mi. Phasellus congue odio non lorem laoreet accumsan. Vivamus pulvinar ac tellus non finibus. Quisque facilisis imperdiet nisl et viverra. Nulla sit amet venenatis dolor,
-                        quis molestie nulla. Nulla nec felis pretium, fermentum massa a, ullamcorper massa.
-                        Vivamus ut lorem nibh. Vivamus consequat turpis quis viverra iaculis. Integer sit amet tortor convallis, convallis sem at, interdum nibh. Phasellus diam nibh, ultricies vitae odio non, pellentesque mattis quam. Vivamus fringilla tempus tortor, laoreet luctus ipsum porttitor at. Suspendisse scelerisque tincidunt metus vel blandit. Proin lorem justo, blandit eu pellentesque at, efficitur ac mi. Aliquam vitae nulla sit amet sapien
-                        tincidunt ornare quis eget purus.
+                        What is happiness? How do you become happy?
+                        A good numbness to downness is to watch:
                     </p>
+                    <iframe
+                    width="560" height="315"
+                    src="https://www.youtube.com/embed/xjNGX52Ee1s"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                    </iframe>
             </section>
 
             <aside id="sidebar">
@@ -54,8 +69,20 @@
         </div>
         <footer id="main-footer">
             <p>
-                Copyright &copy; 2021 Anton Pohlin
+                Copyright &copy; 2021 Anton Pohlin <br>
+                Last modified:
+                <script type="text/javascript">
+                mod_time = document.lastModified.slice(0,10);
+                document.write(mod_time);
+                </script>
             </p>
         </footer>
     </body>
 </html>
+
+
+
+
+<!--
+
+-->
