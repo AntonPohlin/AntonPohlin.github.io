@@ -5,15 +5,24 @@
         <meta name="descriptions" content="This is my personal website, includes my portfolio and basic about me info and some more details.">
         <link rel="shortcut icon" href="../icons/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="../css/pages.css">
-        <title>Home | Anton Pohlin</title>
-
+        <title>About | Anton Pohlin</title>
     </head>
-
+    <audio id="audioID">
+        <source src="../audio/all_of_me.mp3"></source>
+    </audio>
     <body>
         <header id = "main-header">
             <div class="container"
                 <h1>Anton Pohlin</h1>
             </div>
+
+            <script>
+                var audio1 = document.getElementById("audioID");
+                function playAudio() {
+                    audio1.play();
+                    console.log("test");
+                }
+            </script>
         </header>
 
         <nav id = "navbar">
@@ -29,9 +38,8 @@
         </nav>
         <section id="showcase">
             <div class="container">
-                <h1>
-                    latinlaitinlatinaltnlanitl asdandal <br>
-                    admöasm
+                <h1 onclick="playAudio()">
+                    All of me
                 </h1>
             </div>
         </section>
