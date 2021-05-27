@@ -1,11 +1,13 @@
 body{
     background-color:#222222;
-    color:#E0FFFF;
+    color:#ddd;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height:1.6em;
     margin:0;
 }
+
+
 
 .container{
     width:80%;
@@ -49,6 +51,7 @@ body{
     box-sizing: border-box;
 }
 
+
 #sidebar a{
     color: #a6a5c5;
     text-decoration: underline 0.15em rgba(255, 255, 255, 0);
@@ -58,13 +61,12 @@ body{
 
 
 #sidebar a:hover{
-    color: #a6a5c5;
+    color: #d6d5f5;
     text-decoration: underline 0.15em rgba(255, 255, 255, 1);
     font-size: 18px;
     padding-right: 20px;
     transition: all 450ms;
 }
-
 
 #main-footer{
     background: #333;
@@ -72,9 +74,14 @@ body{
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+    position: absolute;
+    margin-bottom: 0;
+    width: 100%;
 }
 
-@media(max-width:700px){
+
+
+@media(max-width:1000px){
     #main{
         width: 100%;
         float:none;
