@@ -62,11 +62,14 @@ textarea.contact-form-text{
 
 .fa {
     opacity: 0.7;
-    margin-left: 100px;
+    margin-left: 40px;
     padding: 20px;
     font-size: 40px !important;
     width: 40px;
     text-align: center;
     text-decoration: none;
     border-radius: 35%;
+}
+
+#contact_msg{
 }
